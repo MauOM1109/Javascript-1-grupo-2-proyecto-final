@@ -4,39 +4,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto&display=swap" rel="stylesheet">
+  <title>AMAZON</title>
 </head>
 <body>
-  <h1>AMAZON</h1>
 
   <div>
-    <h2> Producto </h2>
-    <form action="" id="nuevoProductoForm" onsubmit="Producto">
-      <div class="form-field">
+    <form action="" id="NewProduct" onsubmit="Producto">
+      <h2> Producto </h2>
+    
         <label for="nombre">Nombre</label>
         <input type="text" name="nombre" id="nombre" value="" >
-      </div>
-      
-      <div class="form-field">
+
         <label for="precio">Precio</label>
         <input type="number" name="precio" id="precio" value="" >
-      </div>
 
-      <div class="form-field">
         <label for="descripcion">Descripción</label>
         <textarea type="text" name="descripcion" id="descripcion" value="" ></textarea>
-      </div>
 
-      <div class="form-field">
         <label for="categoria">Categoría</label>
-        <input type="text" name="categoria" id="categoria" value="" >
-      </div>
+        <select id="categoria" name="categoria" form="select">
+          <option value=""></option>
+          <option value="1">Deporte</option>
+          <option value="2">Tecnologia</option>
+          <option value="3">Muebles</option>
+          <option value="4">Ropa</option>
+        </select>
 
-      <div class="form-field">
         <label for="precio">Cantidad</label>
         <input type="number" name="cantidad" id="cantidad" value="" >
-      </div>
-      
+
       <input type="submit" name="enviar" value="Agregar"/>
     </form>
 
