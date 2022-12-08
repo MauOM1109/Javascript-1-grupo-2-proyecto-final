@@ -11,9 +11,9 @@
   <title>AMAZON</title>
 </head>
 <body>
-
-  <div>
-    <form action="" id="NewProduct" onsubmit="Producto">
+  <section>
+  <div id="form">
+    <!-- <form action="" id="NewProduct"> -->
       <h2> Producto </h2>
     
         <label for="nombre">Nombre</label>
@@ -28,20 +28,36 @@
         <label for="categoria">Categoría</label>
         <select id="categoria" name="categoria" form="select">
           <option value=""></option>
-          <option value="1">Deporte</option>
-          <option value="2">Tecnologia</option>
-          <option value="3">Muebles</option>
-          <option value="4">Ropa</option>
+          <option value="1">Verdura</option>
+          <option value="2">Fruta</option>
+          <option value="3">Legumbre</option>
+          <option value="4">Premium</option>
+          <option value="4">Tecnología</option>
+          <option value="4">Otros</option>
         </select>
 
-        <label for="precio">Cantidad</label>
+        <label for="cantidad">Cantidad</label>
         <input type="number" name="cantidad" id="cantidad" value="" >
 
-      <input type="submit" name="enviar" value="Agregar"/>
-    </form>
-
+      <input type="submit" name="enviar" value="Agregar" onclick="imprimirProductos()"/>
+    <!-- </form> -->
+  </div>
+  <div>
+    <h3>Lista de productos</h3>
+    <table id="tbProductos" class="">
+      <tr>
+        <th>Producto</th>
+        <th>Precio</th>
+        <th>Descripción</th>
+        <th>Categoría</th>
+        <th>Cantidad</th>
+        <th></th>
+      </tr>
+    </table>
+  </div>
+  </section>
 </body>
-<script src="./main.js"></script>
+<script src="main.js"></script>
 
 </body>
 </html>

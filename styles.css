@@ -6,7 +6,7 @@
 
 
 
-form{
+#form{
   width: 450px;
   margin-left: 150px;
   background: rgb(36,52,77);
@@ -19,15 +19,15 @@ form{
 }
 
 
-form label {
+#form label {
   width: 72px;
   font-weight: bold;
   display: block;
 }
 
-form input[type="text"],
-form input[type="number"],
-form input[type="email"] {
+#form input[type="text"],
+#form input[type="number"],
+#form input[type="email"] {
   width: 100%;
   padding: 10px 10px;
   border: 1px solid #000000;
@@ -37,7 +37,7 @@ form input[type="email"] {
   display: inline-block;
 }
 
-form input[type="submit"] {
+#form input[type="submit"] {
   width: 200px;
   padding: 8px 16px;
   margin-top: 32px;
@@ -48,7 +48,7 @@ form input[type="submit"] {
   background-color: #000;
 }
 
-form input[type="submit"]:hover {
+#form input[type="submit"]:hover {
   cursor: pointer;
 }
 
@@ -94,4 +94,9 @@ textarea {
 
 .product-list div {
   width: 33%
+}
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
 }
